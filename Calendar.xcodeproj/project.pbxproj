@@ -11,6 +11,10 @@
 		E5F2F0A129802E2A00C90112 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2F0A029802E2A00C90112 /* ContentView.swift */; };
 		E5F2F0A329802E3100C90112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F2F0A229802E3100C90112 /* Assets.xcassets */; };
 		E5F2F0A629802E3100C90112 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F2F0A529802E3100C90112 /* Preview Assets.xcassets */; };
+		E5F2F0AF29802E7B00C90112 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2F0AE29802E7B00C90112 /* Home.swift */; };
+		E5F2F0B129802EF400C90112 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2F0B029802EF400C90112 /* CustomDatePicker.swift */; };
+		E5F2F0B3298038AA00C90112 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2F0B2298038AA00C90112 /* DateValue.swift */; };
+		E5F2F0B52980505300C90112 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2F0B42980505300C90112 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		E5F2F0A029802E2A00C90112 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5F2F0A229802E3100C90112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5F2F0A529802E3100C90112 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5F2F0AE29802E7B00C90112 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E5F2F0B029802EF400C90112 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		E5F2F0B2298038AA00C90112 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		E5F2F0B42980505300C90112 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 		E5F2F09D29802E2A00C90112 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				E5F2F0AD29802E5100C90112 /* Model */,
+				E5F2F0AC29802E4800C90112 /* View */,
 				E5F2F09E29802E2A00C90112 /* CalendarApp.swift */,
 				E5F2F0A029802E2A00C90112 /* ContentView.swift */,
 				E5F2F0A229802E3100C90112 /* Assets.xcassets */,
@@ -65,6 +75,24 @@
 				E5F2F0A529802E3100C90112 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5F2F0AC29802E4800C90112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5F2F0AE29802E7B00C90112 /* Home.swift */,
+				E5F2F0B029802EF400C90112 /* CustomDatePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5F2F0AD29802E5100C90112 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5F2F0B2298038AA00C90112 /* DateValue.swift */,
+				E5F2F0B42980505300C90112 /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F2F0B129802EF400C90112 /* CustomDatePicker.swift in Sources */,
 				E5F2F0A129802E2A00C90112 /* ContentView.swift in Sources */,
+				E5F2F0AF29802E7B00C90112 /* Home.swift in Sources */,
 				E5F2F09F29802E2A00C90112 /* CalendarApp.swift in Sources */,
+				E5F2F0B52980505300C90112 /* Task.swift in Sources */,
+				E5F2F0B3298038AA00C90112 /* DateValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
