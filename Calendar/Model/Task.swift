@@ -31,11 +31,11 @@ func getSampleDate(offset: Int) -> Date {
 
 var tasks: [TaskMetaData] = [
 
-    TaskMetaData(task: [Task(title: "Meeting 1"),
-    Task(title: "Meeting 2"), Task(title: "Meeting 3")], taskDate: getSampleDate(offset: 1)),
-    TaskMetaData(task: [Task(title: "Meeting 4")], taskDate: getSampleDate(offset: -3)),
-    TaskMetaData(task: [Task(title: "Meeting 5")], taskDate: getSampleDate(offset: -8)),
-    TaskMetaData(task: [Task(title: "Meeting 6")], taskDate: getSampleDate(offset: 10)),
-    TaskMetaData(task: [Task(title: "Meeting 7")], taskDate: getSampleDate(offset: -22)),
-    TaskMetaData(task: [Task(title: "Meeting 8")], taskDate: getSampleDate(offset: 15)),
-    TaskMetaData(task: [Task(title: "Meeting 9")], taskDate: getSampleDate(offset: -20))]
+    TaskMetaData(task: [Task(title: "Meeting "),
+    Task(title: "Vacation "), Task(title: "Party ")], taskDate: getSampleDate(offset: 1)),
+    TaskMetaData(task: [Task(title: "Shopping ")], taskDate: getSampleDate(offset: -3)),
+    TaskMetaData(task: [Task(title: "Doctor ")], taskDate: getSampleDate(offset: -8)),
+    TaskMetaData(task: [Task(title: "Test ")], taskDate: getSampleDate(offset: 10)),
+    TaskMetaData(task: [Task(title: "Birthday ")], taskDate: getSampleDate(offset: -22)),
+    TaskMetaData(task: [Task(title: "Meeting ")], taskDate: getSampleDate(offset: 15)),
+    TaskMetaData(task: [Task(title: "Meeting ")], taskDate: getSampleDate(offset: -20))]

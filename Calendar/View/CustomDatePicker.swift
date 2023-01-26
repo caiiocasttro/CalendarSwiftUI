@@ -51,6 +51,7 @@ struct CustomDatePicker: View {
                 Spacer(minLength: 0)
             }
             .padding(.horizontal)
+            .padding(.top)
             // Day view...
             
             HStack(spacing: 0) {
@@ -78,7 +79,41 @@ struct CustomDatePicker: View {
                             }
                 }
             }
+            VStack(spacing: 20) {
+                Text("Tasks")
+                    .font(.system(size: 20))
+                    .fontWeight(.bold)
+                    .fontDesign(.rounded)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.vertical, 20)
+                
+                if let task = tasks.first(where: { task in
+                    return isSameDay(date1: task.taskDate, date2: currentDate)
+                }){
+                    ForEach(task.task) { task in
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(task.time
+                                .addingTimeInterval(CGFloat .random(in: 0...5000)), style: .time)
+                            
+                            Text(task.title)
+                                .font(.system(size: 16))
+                                .fontWeight(.bold)
+                        }
+                        .padding(.vertical, 10)
+                        .padding(.horizontal)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(Color("Green").opacity(0.3).cornerRadius(10))
+                    }
+                } else {
+                    Text("No Task Found")
+                }
+            }
+            .padding(.horizontal, 8)
+            .padding(.vertical)
         }
+        .background(Color("Pink").opacity(0.1))
+        .cornerRadius(10)
+        .frame(width: 342)
         .onChange(of: currentMonth) { newValue in
             // updating month...
             currentDate = getCurrentMonth()
